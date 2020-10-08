@@ -5,7 +5,7 @@
     grid-template-areas:
     "ms . ab"
     ". lt ."
-    "date logo today";
+    "date logo today"; 
 }
 
 .masthead__menu-and-search{
@@ -17,10 +17,21 @@
 
 .masthead__actions{
     grid-area: ab;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .masthead__technologies{
     grid-area: lt;
+    text-align: center; 
+    margin: 0 4px;
+}
+
+.masthead__technology-list {
+    color: #6f6f6f; 
+    font-size: 10px;  
+    text-transform: uppercase;
 }
 
 .masthead__date{
@@ -29,6 +40,7 @@
 
 .masthead__logo{
     grid-area: logo;
+    text-align: center; 
 }
 
 .masthead__paper{
@@ -38,9 +50,15 @@
 .masthead__btn-icons{
     font-size: 11px;
     padding: 7px 9px 7px 9px;
-
+    height: 
 }
 
 .masthead__btn-icons:hover{
     background-color: #f7f7f5;
+}
+
+.masthead__actions:hover {
+    background-color: #326891;
+    text-transform: uppercase;
+    transition-duration: 0.3s;
 }
