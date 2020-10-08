@@ -1,0 +1,46 @@
+.masthead{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-areas:
+    "ms . ab"
+    ". lt ."
+    "date logo today";
+}
+
+.masthead__menu-and-search{
+    grid-area: ms;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.masthead__actions{
+    grid-area: ab;
+}
+
+.masthead__technologies{
+    grid-area: lt;
+}
+
+.masthead__date{
+    grid-area: date;
+}
+
+.masthead__logo{
+    grid-area: logo;
+}
+
+.masthead__paper{
+    grid-area: today;
+}
+
+.masthead__btn-icons{
+    font-size: 11px;
+    padding: 7px 9px 7px 9px;
+
+}
+
+.masthead__btn-icons:hover{
+    background-color: #f7f7f5;
+}
